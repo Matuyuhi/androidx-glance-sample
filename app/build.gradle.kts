@@ -85,6 +85,17 @@ dependencies {
     implementation(libs.androidx.glance.appwidget)
     debugImplementation(libs.androidx.glance.preview)
     debugImplementation(libs.androidx.glance.appwidget.preview)
+
+    implementation(libs.github.pokekotlin)
+
+    implementation(platform(libs.koin.bom))
+    implementation(libs.koin.core)
+    implementation(libs.koin.android)
+    implementation(libs.koin.android.compose)
+    implementation(libs.koin.android.compose.navigation)
+
+    implementation(libs.koin.compose)
+    testImplementation(libs.koin.test)
 }
 
 with(extensions.getByType<KotlinAndroidProjectExtension>()) {

@@ -9,6 +9,9 @@ lifecycleRuntimeKtx = "2.8.2"
 activityCompose = "1.9.0"
 composeBom = "2024.06.00"
 glance = "1.1.0"
+pokekotlin = "2.3.1"
+koin= "3.5.6"
+koinCompose = "3.6.0-alpha1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -33,6 +36,16 @@ androidx-glance-appwidget = { group = "androidx.glance", name = "glance-appwidge
 androidx-glance-appwidget-preview = { group = "androidx.glance", name = "glance-appwidget-preview", version.ref = "glance" }
 #androidx-glance-wear-tiles = { group = "androidx.glance", name = "glance-wear-tiles", version.ref = "glanceWearTiles" }
 
+github-pokekotlin = { group = "com.github.PokeAPI", name = "pokekotlin", version.ref = "pokekotlin" }
+
+koin-bom =  { group = "io.insert-koin", name = "koin-bom", version.ref = "koin" }
+koin-android = { group = "io.insert-koin", name = "koin-android" }
+koin-android-compose = { group = "io.insert-koin", name = "koin-androidx-compose" }
+koin-android-compose-navigation = { group = "io.insert-koin", name = "koin-androidx-compose-navigation" }
+koin-core = { group = "io.insert-koin", name = "koin-core" }
+koin-test = { group = "io.insert-koin", name = "koin-test" }
+koin-compose = { group = "io.insert-koin", name = "koin-compose", version.ref = "koinCompose" }
+#koin-compose-viewmodel = { group = "io.insert-koin", name = "koin-compose-viewmodel", version.ref = "koinCompose" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
